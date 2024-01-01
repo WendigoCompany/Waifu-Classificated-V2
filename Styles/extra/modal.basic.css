@@ -1,0 +1,36 @@
+.basic-modal{
+    position: fixed;
+    background-color: #000000;
+    width: 80%;
+    height: 80%;
+}
+
+#modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006e;
+    z-index: 10000000;
+}
+
+.modal-btn-cls-cont{
+    font-size: 4vh;
+}
+.modal-btn-cls-cont:hover{
+    color: #ed4f4f;
+}
+
+.modal-text-basic {
+    font-family: Font-Card-Title;
+    color: #ffffff;
+
+}
+
+
+.modal-input-basic {
+    font-family: Font-Card-Title;
+    color: #ffffff;
+    width: 100%;
+    background-color: transparent;
+}

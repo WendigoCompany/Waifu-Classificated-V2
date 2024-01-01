@@ -1,0 +1,29 @@
+
+@font-face {
+  font-family: "Font-Card-Title";
+  src: url("../../Fonts/Tektur_SemiCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Font-Description";
+  src: url("../../Fonts/Inconsolata_SemiExpanded-Medium.ttf");
+}
+
+  @font-face {
+    font-family: "Font-Title";
+    src: url("../../Fonts/DancingScript-Bold.ttf");
+  }
+
+  .basic-text{
+
+  }
+
+  .basic-btn{
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: Font-Title;
+    background-color: transparent   ;
+    text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+    transition: color .3s;
+  }

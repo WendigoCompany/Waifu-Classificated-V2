@@ -1,0 +1,74 @@
+.modal-cont-chat {
+  width: 70%;
+  height: fit-content;
+  border-radius: 1%;
+  left: 10%;
+  top: 3%;
+  padding: 1vh 1.5vw 4vh 1.5vw;
+  background-color: #000000f5;
+}
+
+.modal-img-chat {
+  width: 60vh;
+  margin: 0% 0% 1% 0%;
+}
+
+.modal-chat-hist {
+  width: 100%;
+  height: 30vh;
+  font-size: 2vh;
+  color: #ffffff;
+  background-color: #57575747;
+  font-family: Font-Description;
+}
+
+.modal-chat-inp {
+  width: 100%;
+  color: #ffffff;
+  background-color: #57575747;
+  font-size: 2vh;
+  font-family: Font-Description;
+}
+
+.modal-chat-btns-cont {
+  margin: 1vh 0vw;
+}
+
+.modal-chat-btns {
+  width: 45%;
+  font-size: 2vh;
+  color: #000000;
+  border: none !important;
+  outline: 0;
+  margin: 0% 0% 0% 1%;
+  outline: none;
+  transition:  background-color .2s , border-color .2s;
+}
+
+.modal-chat-btns:hover {
+  color: #000000 !important ;
+}
+
+.modal-chat-btns:focus {
+  color: #000000 !important ;
+}
+
+.btn-danger-modal {
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+}
+.btn-danger-modal:hover {
+  background-color: #f54758;
+  border-color: #f54758;
+}
+
+
+.btn-success-modal {
+    background-color: #198754;
+    border-color: #198754;
+  }
+  .btn-success-modal:hover {
+    background-color: #21cf7e;
+    border-color: #21cf7e;
+  }
+  

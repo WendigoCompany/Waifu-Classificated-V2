@@ -1,0 +1,7 @@
+.title{
+    margin: 0vh 0vh 10vh 0vh !important;
+    font-family: Font-Title;
+    font-size: 7vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}

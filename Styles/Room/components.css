@@ -1,0 +1,76 @@
+.action-cont {
+  width: 40vh;
+  height: 90vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 5%;
+  background-color: rgb(162, 218, 234);
+  z-index: 1000;
+}
+
+.menu_btn {
+  display: inline-block;
+  margin: 10vh 1%;
+  height: 70vh;
+  border: 0.3vh solid rgb(94, 129, 139);
+  border-radius: 2%;
+  background-color: transparent;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.hide_cont {
+  width: 10vh;
+}
+
+.show_cont {
+  width: 50vh;
+}
+
+.offerts-cont {
+  position: fixed;
+  top: 4%;
+  right: 20vh;
+}
+
+.offert-btn {
+  width: 60%;
+  margin: 5vh 0%;
+  font-size: 3vh;
+  height: 9vh;
+}
+
+
+.hide-page {
+  display: none;
+}
+
+.show-page {
+  display: block;
+}
+.offerts-pagin {
+  position: fixed;
+  bottom: 12%;
+  right: 10vh;
+  width: fit-content;
+  z-index: 2000;
+
+}
+
+.offert-pagbtn {
+  font-size: 3vh;
+  height: 6vh;
+  width: 6vh;
+  margin: 0% 3vh;
+}
+
+.dialog-name{
+  font-size: 4vh;
+  margin:  1vh 0vh 0vh 1vh;
+}
+
+.dialog-para{
+  font-size: 2vh;
+  margin:  1vh 0vh 0vh 1vh;
+}

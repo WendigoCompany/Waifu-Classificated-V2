@@ -1,0 +1,11 @@
+.dialog-cont{
+    position: absolute;
+    left: 1%;
+    width: 95%;
+    background-color: rgba(184, 184, 184, 0.548);
+    bottom: 1%;
+    height: 25%;
+    border-radius: 1%;
+    border: .3vh solid #ab79b0;
+}
+

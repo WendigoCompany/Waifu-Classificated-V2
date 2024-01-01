@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Libs/jquery/css/manifiest.css" />
+    <link rel="stylesheet" href="../Styles/Index/manifiest.css" />
+    <script>
+        localStorage.setItem("ISDEV", true)
+    </script>
+    <script src="../Libs/jquery/js/jquery.js"></script>
+    <script src="../Config/basics.js"></script>
+    <script src="../Config/session.js"></script>
+    <link rel="stylesheet" href="../Styles/extra/user.menu.css"></link>
+
+
+
+  </head>
+
+  <body>
+
+    <div class="background">
+        
+    </div>
+
+    <div id="modal">
+  
+    </div>
+
+    <!-- <div>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-rigth w-25" src="../Media/PH/download.jfif" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div> -->
+    
+    <style>
+        #chat-btn{
+            display: none;
+        }
+    </style>
+
+    <div id="user-banner">
+      <button id="back-btn">X</button>
+      <div id="user-options"></div>
+    </div>
+
+    <h1 id="title" class="text-center title"></h1>
+    <br />
+
+    <div class="card-container" id="card-container">
+      <!-- <div class="row card-body">
+            <div class="col">
+                <img class="card-img-rigth card-img" src="../Media/PH/download.jfif" alt="Card image cap" />
+            </div>
+            <div class="col-8">
+                <h3 class="text-center">ESTO ES UN CONTENDIO</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                    amet necessitatibus alias? Saepe amet optio minima eaque nam,
+                    natus commodi facere, quas adipisci iusto, odit ut voluptatem!
+                    Mollitia, cum quod?
+                </p>
+            </div>
+        </div> -->
+    </div>
+
+    <div id="paginator" class="pag-cont"></div>
+
+    <!-- <table class="table">
+        <thead></thead>
+        <tbody>
+            <tr class="sm-75">
+                <td  class="card-img-cont">
+                    <img class="card-img-rigth card-img" src="../Media/PH/download.jfif" alt="Card image cap" />
+                </td>
+                <td class="card-content-cont">
+                    <h3>ESTO ES UN CONTENDIO</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                        amet necessitatibus alias? Saepe amet optio minima eaque nam,
+                        natus commodi facere, quas adipisci iusto, odit ut voluptatem!
+                        Mollitia, cum quod?
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table> -->
+
+
+    <div id="scripts-scencials">
+      <script src="../Models/Card.model.js"></script>
+      <script src="../Models/Worker.model.js"></script>
+      <!-- <script src="../Models/Workers.db.js"></script> -->
+      <script src="../DB/manifiest.js"></script>
+      <script src="../Config/movers.js"></script>
+      <script src="../Scripts/Modal/basics_modal.js"></script>
+      <script src="../Scripts/Modal/change_game.js"></script>
+      <script src="../Scripts/UI/user.ui.js"></script>
+      
+    </div>
+
+
+    <div id="scripts-db">
+
+    </div>
+
+    <div id="scripts-page">
+        <script src="../Scripts/Index/card_creator.js"></script>
+        <script src="../Scripts/Index/paginator.js"></script>
+      <script src="../Scripts/Index/core.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+
+
+.card-img {
+  width: 50vh;
+  height: 45vh !important;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.col-img {
+  width: 40vh;
+}
+
+.card-container {
+  max-width: 90%;
+  margin: 1% 0% 0% 3%;
+}
+
+.card-body {
+  background-color: #0000005d;
+  border-radius: 1%;
+  cursor: pointer;
+  color: #ffffff;
+  transition: background-color .3s;
+}
+
+.card-body:hover{
+  background-color: #df3c3c5d;
+}
+.card-title{
+  font-family: Font-Card-Title;
+}
+
+.card-description{
+    font-family: Font-Description;
+}

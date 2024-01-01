@@ -1,0 +1,68 @@
+.img-gallery{
+    display: inline-block;
+    width: 25vh;
+    height: 25vh;
+    margin: 0vh .3vh;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+#gallery-cont{
+    background-color: #00000038;
+}
+
+.desc-cont{
+    width: 80%;
+    margin: 3vh 10%;
+    background-color: #0000005d;
+}
+.desc-cont h3{
+    text-align: center;
+    
+}
+
+.desc-cont p{
+    text-align: left;
+    margin: 0% 5vh;
+    color: #ffffffba;
+    font-family: Font-Description;
+    font-size: 2vh;
+}
+
+#img-thumb{
+    width: 80vh;
+}
+
+.big-img{
+ 
+    width: 90%;
+    height: 90%;
+    margin: 2.5% 0% 0% 5%;
+}
+
+.big-img-cont{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: #0000004d;
+}
+
+.hide-cont{
+    display: none;
+}
+
+.show-cont{
+    display: block;
+}
+
+.gallery-btn-act{
+    font-size: 3vh;
+    width: fit-content;
+}
+
+.gallery-btn-act:hover{
+    color: #ed4f4f;
+}

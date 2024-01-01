@@ -1,0 +1,20 @@
+@import url("../extra/fonts.css");
+@import url("../extra/back.ui.css");
+@import url("../extra/modal.basic.css");
+@import url("../extra/modal.change_name.css");
+@import url("../extra/modal.chat.css");
+@import url("./images.css");
+
+
+.background{
+    background-image: url("../../Media/basics/background\ clasiffi.png");
+    background-color: black;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1000000000000000000000;
+}
