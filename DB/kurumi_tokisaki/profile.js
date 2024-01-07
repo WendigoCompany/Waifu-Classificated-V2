@@ -9,7 +9,7 @@ aux_creation.pre_desc = `Hi, my name is Tokisaki Kurumi and I can make your most
 aux_creation.name = `kurumi_tokisaki`;
 aux_creation.selected = 6;
 aux_creation.gallery = 19;
-aux_creation.offerts =["Anal"]
+aux_creation.offerts =["Anal", "Vaginal", "Blowjob", "Handjob", "Facefuck"]
 aux_creation.description = `
 Hi, my name is Tokisaki Kurumi and I can make your most perverted dreams come true ~<br><br>
 

@@ -6,6 +6,7 @@ const path = require("path");
 const __dirname = path.resolve(path.dirname(''));
 let base_proyect = __dirname;
 let breaker_primary = 0;
+
 do {
     breaker_primary++
     if (base_proyect.includes('\\')) {
@@ -16,6 +17,7 @@ do {
 } while (breaker_primary < 1000);
 
 const read = util.promisify(fs.readFile);
+const readdir = util.promisify(fs.readdir);
 
 const IS_DEV = JSON.parse(localStorage.getItem("ISDEV"));
 
