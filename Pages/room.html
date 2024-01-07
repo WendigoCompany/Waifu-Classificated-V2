@@ -12,14 +12,45 @@
 </head>
 <body>
   <div id="user-banner">
-    <button id="back-btn">
-      <= 
-    </button>
+
         <div id="user-options"></div>
   </div>
 
- <div id="choise-cont">
+  <div  id="modal">
+    <div id="modal-cont" class="modal-cont-chnage-backg basic-modal">
+        <div class="">
+          <button class="close-modal modal-btn-cls-cont basic-btn">X</button>
+        </div>
+        <br>
 
+
+      <div class="modal-backg-cont">
+        <div>
+          <h3 class="modal-backg-img"></h3>
+          <h3 class="modal-backg-img"></h3>
+          <h3 class="modal-backg-img"></h3>
+        </div>
+        <br>
+        <div>
+          <h3 class="modal-backg-img"></h3>
+          <h3 class="modal-backg-img"></h3>
+          <h3 class="modal-backg-img"></h3>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+ <div id="choise-cont">
+  <div>
+    <button class="top-btn-room" id="back-btn">
+      <= 
+    </button>
+    <button class="top-btn-room background-btn"></button>
+
+
+  </div>
       <!-- <div id="action-cont" class="action-cont hide_cont">
         <button id="menu_btn" class="menu_btn"><<<</button>
         <div class="offerts-cont" id="offerts-cont">
@@ -55,20 +86,24 @@
 
 
 
-
 <div id="scripts-scencials">
   <script src="../Models/Card.model.js"></script>
   <script src="../Models/Worker.model.js"></script>
-  <script src="../Models/Workers.db.js"></script>
+  <script src="../DB/manifiest.js"></script>
   <script src="../Config/movers.js"></script>
+  <script src="../Scripts/Modal/basics_modal.js"></script>
+  <script src="../Scripts/Modal/change_background_modal.js"></script>
 </div>
 
 
+<div id="scripts-db">
+
+</div>
 <div id="scripts-page">
   <script src="../Scripts/Room/actions.js"></script>
   <script src="../Scripts/Room/dialog.js"></script>
   <script src="../Scripts/Room/core.js"></script>
-  <script src="../Scripts/UI/back.js"></script>
+  <!-- <script src="../Scripts/UI/back.js"></script> -->
 </div>
 </div>
 </body>

@@ -14,3 +14,35 @@
     left: 35%;
     z-index: -1;    
 }
+
+
+.top-btn-room{
+    position: fixed;
+    width: 7vh;
+    height: 7vh;
+    top: 1%;
+    border-radius: 1%;
+    border: .3vh solid black;
+    background-color: #6b7da0;
+    transition:  background-color .2s;
+}
+
+
+.background-btn{
+    background-image: url("../../Media/icons/background\ icon.png");
+    left: 5%;
+
+    background-size: cover;
+}
+
+.top-btn-room:hover{
+    
+    background-color: #93b4f6;
+}
+
+#back-btn{
+    background-image: url("../../Media/icons/arror back.png");
+    left: 1%;
+    background-size: cover;
+}
+
