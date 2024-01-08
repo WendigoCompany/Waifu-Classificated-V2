@@ -1,11 +1,11 @@
 
-const max_per_page_background = 6;
+const max_per_page_clothes = 6;
 
-let background_containers = [];
+let clothes_containers = [];
 
 
 
-const build_modal_change_background = () => {
+const build_modal_change_clothes = () => {
   const components = []
   const paginator_params = {}
 
@@ -47,7 +47,7 @@ const build_modal_change_background = () => {
   components.push($("<button/>"))
 
 
-  background_containers = [
+  clothes_containers = [
     components[5],
     components[6],
     components[7],
@@ -56,17 +56,17 @@ const build_modal_change_background = () => {
     components[11],
   ];
 
-  components[0].attr({ "id": "modal-cont", "class": "modal-cont-chnage-backg basic-modal" });
+  components[0].attr({ "id": "modal-cont", "class": "modal-cont-chnage-backg modal-cont-chnage-clothes basic-modal" });
   components[1].attr({ "id": "", "class": "" });
   components[2].attr({ "id": "", "class": "close-modal modal-btn-cls-cont basic-btn" });
   components[3].attr({ "id": "", "class": "modal-backg-con" });
   components[4].attr({ "id": "", "class": "" });
-  components[5].attr({ "id": "bg-prv-1", "class": "modal-backg-img" });
-  components[6].attr({ "id": "bg-prv-2", "class": "modal-backg-img" });
-  components[7].attr({ "id": "bg-prv-3", "class": "modal-backg-img" });
-  components[9].attr({ "id": "bg-prv-4", "class": "modal-backg-img" });
-  components[10].attr({ "id": "bg-prv-5", "class": "modal-backg-img" });
-  components[11].attr({ "id": "bg-prv-6", "class": "modal-backg-img" });
+  components[5].attr({ "id": "bg-prv-1", "class": "modal-clothes-img" });
+  components[6].attr({ "id": "bg-prv-2", "class": "modal-clothes-img" });
+  components[7].attr({ "id": "bg-prv-3", "class": "modal-clothes-img" });
+  components[9].attr({ "id": "bg-prv-4", "class": "modal-clothes-img" });
+  components[10].attr({ "id": "bg-prv-5", "class": "modal-clothes-img" });
+  components[11].attr({ "id": "bg-prv-6", "class": "modal-clothes-img" });
   components[13].attr({ "id": "modal-paginator", "class": "text-center" });
 
   components[14].attr({ "id": "modal-pag-btn-back", "class": "modal-pag-btn" });
@@ -123,12 +123,12 @@ const build_modal_change_background = () => {
   })
 
 
-  get_background().then(res => {
-    paginator_params.max = Math.floor(res.length / max_per_page_background);
+  get_clothes().then(res => {
+    paginator_params.max = Math.floor(res.length / max_per_page_clothes);
     paginator_params.min = 0
     paginator_params.actual = 0
-    add_paginator_events(paginator_params,res)
-    show_previews(paginator_params, res);
+    add_paginator_events_clothes(paginator_params, res)
+    show_previews_clothes(paginator_params, res);
 
 
 
@@ -138,53 +138,57 @@ const build_modal_change_background = () => {
   })
 }
 
-const show_previews =(params,preview_arr)=>{
-  show_preview_img(background_containers[0], preview_arr[(params.actual * max_per_page_background) + 0])
-  show_preview_img(background_containers[1], preview_arr[(params.actual * max_per_page_background) + 1])
-  show_preview_img(background_containers[5], preview_arr[(params.actual * max_per_page_background) + 5])
-  show_preview_img(background_containers[2], preview_arr[(params.actual * max_per_page_background) + 2])
-  show_preview_img(background_containers[3], preview_arr[(params.actual * max_per_page_background) + 3])
-  show_preview_img(background_containers[4], preview_arr[(params.actual * max_per_page_background) + 4])
+const show_previews_clothes = (params, preview_arr) => {
+  show_preview_img_clothes(clothes_containers[0], preview_arr[(params.actual * max_per_page_clothes) + 0])
+  show_preview_img_clothes(clothes_containers[1], preview_arr[(params.actual * max_per_page_clothes) + 1])
+  show_preview_img_clothes(clothes_containers[5], preview_arr[(params.actual * max_per_page_clothes) + 5])
+  show_preview_img_clothes(clothes_containers[2], preview_arr[(params.actual * max_per_page_clothes) + 2])
+  show_preview_img_clothes(clothes_containers[3], preview_arr[(params.actual * max_per_page_clothes) + 3])
+  show_preview_img_clothes(clothes_containers[4], preview_arr[(params.actual * max_per_page_clothes) + 4])
 }
 
-const add_paginator_events = (params,preview_arr) => {
+const add_paginator_events_clothes = (params, preview_arr) => {
 
-  $("#modal-pag-btn-back").on("click",()=>{
-   if(params.actual - 1 < 0){
-    params.actual = params.max
-   }else{
-    params.actual --;
-   }
-     show_previews(params,preview_arr)
+  $("#modal-pag-btn-back").on("click", () => {
+    if (params.actual - 1 < 0) {
+      params.actual = params.max
+    } else {
+      params.actual--;
+    }
+    show_previews_clothes(params, preview_arr)
   })
-  $("#modal-pag-btn-next").on("click",()=>{
-    if(params.actual + 1 > params.max){
+  $("#modal-pag-btn-next").on("click", () => {
+    if (params.actual + 1 > params.max) {
       params.actual = params.min
-     }else{
-      params.actual ++;
-     }
-       show_previews(params,preview_arr)
+    } else {
+      params.actual++;
+    }
+    show_previews_clothes(params, preview_arr)
   })
 
 }
 
-const show_preview_img = (element, preview_img) => {
-  
+const show_preview_img_clothes = (element, preview_img) => {
+
   if (preview_img === undefined) {
-    element.on("click",()=>{
-      
+    element.on("click", () => {
+
     })
 
     $(element).css({
       "backgroundImage": `url("${base_proyect}/Media/icons/no img .png")`
     })
   } else {
-    element.on("click",()=>{
-      sessionStorage.setItem("bg", preview_img)
-      document.getElementById("background-img").src = `${base_proyect}/Media/room_backgrounds/${preview_img}`;
+    element.on("click", () => {
+      if (sessionStorage.getItem("pose") == null) {
+        sessionStorage.setItem("spray", preview_img)
+        document.getElementById("spray-img").src = `${base_proyect}/Media/${worker_selected.name}/room/${preview_img}`;
+      } else {
+
+      }
     })
     $(element).css({
-      "backgroundImage": `url("${base_proyect}/Media/room_backgrounds/${preview_img}")`
+      "backgroundImage": `url("${base_proyect}/Media/${worker_selected.name}/room/${preview_img}")`
     })
 
   }
@@ -251,6 +255,6 @@ const show_preview_img = (element, preview_img) => {
   */
 
 
-$("#background-btn").on("click",()=>{
-  build_modal_change_background()
+$("#chg-clothes").on("click", () => {
+  build_modal_change_clothes()
 })

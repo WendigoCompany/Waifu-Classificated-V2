@@ -52,3 +52,20 @@
 .modal-pag-btn:hover{
     color: #ed4f4f;
 }
+
+.modal-clothes-img{
+    display: inline-block;
+    width: 10vw;
+    height: 30vh;
+    border-radius: 5%;
+    background-color: rgb(211, 123, 123); 
+    margin: 2% 0% 0% 4%;
+    background-size: auto 100%;
+    background-position: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.modal-cont-chnage-clothes{
+    left: 55% !important;
+}

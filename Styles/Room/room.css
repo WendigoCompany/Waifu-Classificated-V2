@@ -7,14 +7,20 @@
     height: 100vh;
 }
 
+
+
 .spray-img{
-    width: 40vh;
+    max-height: 90vh;
     position: fixed;
     bottom: 0;
     left: 35%;
     z-index: -1;    
 }
 
+.room-spray-cont{
+    width: 100%;
+    text-align: center;
+}
 
 .top-btn-room{
     position: fixed;
@@ -43,10 +49,12 @@
 #back-btn{
     background-image: url("../../Media/icons/arror back.png");
     left: 1%;
-    background-size: cover;
+
 }
 
 #chg-clothes{
     top: 10% !important;
+    background-image: url("../../Media/icons/clothes.png");
+    background-size: cover;
     left: 1%;
 }
