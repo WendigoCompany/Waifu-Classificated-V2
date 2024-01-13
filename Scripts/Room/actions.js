@@ -31,10 +31,18 @@ const update_actions = (list_offerts) => {
                 class: "offert-btn"
             });
             const btn = $("<button/>");
-            btn.text(list_offerts[i])
+            btn.text(list_offerts[i].name)
                 .attr({
                     id: "",
                     class: "offert-btn-ele"
+                })
+                .on("click",()=>{
+                    sessionStorage.setItem("sex-pose",list_offerts[i].name.toLowerCase() )
+                    sessionStorage.setItem("minigame-id", list_offerts[i].minigame)
+                    destroy_main_ui()
+                    setTimeout(() => {
+                        load_ui("sex")
+                    }, 3000);
                 })
 
             div.appendTo("#offerts-cont")

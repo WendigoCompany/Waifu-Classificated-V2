@@ -1,109 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Libs/jquery/css/manifiest.css">
-    <script src="../Libs/jquery/js/jquery.js"></script>
-    <script src="../Config/basics.js"></script>
-    <script src="../Config/session.js"></script>
-    <link rel="stylesheet" href="../Styles/Room/manifiest.css"></link>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Libs/jquery/css/manifiest.css">
+  <script src="../Libs/jquery/js/jquery.js"></script>
+  <script src="../Config/basics.js"></script>
+  <script src="../Config/session.js"></script>
+  <script src="../Scripts/Resources/random.js"></script>
+  <link rel="stylesheet" href="../Styles/Room/manifiest.css">
+  </link>
+
 </head>
+
 <body>
-<div id="room-loby-cont">
-
-  <div id="user-banner">
-
-    <div id="user-options"></div>
-</div>
-
-<div  id="modal">
+  <!-- MODALS -->
+  <div id="modal">
 
 
-</div>
-
-<div id="choise-cont">
-<div>
-
-<button class="top-btn-room background-btn" id="background-btn"></button>
-
-</div>
-  <!-- <div id="action-cont" class="action-cont hide_cont">
-    <button id="menu_btn" class="menu_btn"><<<</button>
-    <div class="offerts-cont" id="offerts-cont">
-
-    </div>
-    <div class="offerts-pagin" id="offerts-pagin">
-
-    </div>
-    <div>
-
-    </div>
-  </div> -->
-
-
-<!-- <div class="" id=""> -->
-
-</div>
-
-
-
-<div id="dialog-cont">
-  <p id="dialog-txt">
-
-  </p>
-</div>
-
-
-
-</div>
-
-<div id="room-cont">
+  </div>
   
-<button class="top-btn-room" id="back-btn">
-  <= 
-</button>
-<button class="top-btn-room" id="chg-clothes">
- 
-</button>
-  <img class="background-img" id="background-img" src="" alt="">
-  <!-- <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a82c2f50-3e08-4352-9dc8-11b0f26cbe5d/dbamak1-e05e2dc3-97b9-4993-9714-262807b237b6.png/v1/fill/w_670,h_1191/kurumi_tokisaki_render_by_kotoreh_dbamak1-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE5MSIsInBhdGgiOiJcL2ZcL2E4MmMyZjUwLTNlMDgtNDM1Mi05ZGM4LTExYjBmMjZjYmU1ZFwvZGJhbWFrMS1lMDVlMmRjMy05N2I5LTQ5OTMtOTcxNC0yNjI4MDdiMjM3YjYucG5nIiwid2lkdGgiOiI8PTY3MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.rTOuZo4Pf9Ak8HRWKpAZTNzcwZ2MyZWwtM4sq5T9H6E" class="spray-img" alt=""> -->
-  <div class="room-spray-cont">
-    <img id="spray-img" class="spray-img" src="" alt="">
+<!-- USER INTRACTION BUTTONS -->
+<div id="user-interactions">
+  <button class="top-btn-room" id="back-btn">
+    <= </button>
+      <button class="top-btn-room" id="chg-clothes">
+      </button>
+      <div>
+
+        <button class="top-btn-room background-btn" id="background-btn"></button>
+
+      </div>
+
+</div>
+
+<!-- MAIN UI -->
+  <div id="room-loby-cont">
+
+
+    <div id="choise-cont">
+
+
+    </div>
+
+    
+
+
+
+    <div id="dialog-cont">
+      <p id="dialog-txt">
+
+      </p>
+    </div>
+
+
+
+
+  </div>
+
+<!-- MINI GAME CONT -->
+
+  <div id="minigame-statics">
+    <div>
+      <div id="stamina-cont">
+        <div class="stamina-bar"></div>      
+        <div id="stamina-progress" class="stamina-bar"></div>
+  
+        <div class="stamina-logo"></div>
+      </div>
+    </div>
+    <div id="minigame-cont">
+
+
+      </div>
+    </div>
+  
+    <div id="minigame-controls-cont">
+        <div id="controls-cont">
+          <button class="controls-btn" id="help-btn">HELP</button>
+          <br>
+          <button class="controls-btn" id="auto-btn">AUTO</button>
+        </div>
+    </div>
   </div>
 
 
-</div>
+
+<!-- SEX CONT -->
+  <div id="room-cont">
+  
+    <div class="sex-spray-cont">
+      <h3 id="sex-spray" class="sex-spray"></h3>
+      <!-- <img id="sex-spray-1" class="sex-spray" src="../Media/kurumi_tokisaki/room/0/handjob/1_1.png" alt=""> -->
+      <!-- <img id="sex-spray-2" class="sex-spray" src="" alt=""> -->
+
+      <img id="preload-sex-spray" hidden alt="">
+    </div>
+
+    
+  </div>
+
+  <!-- MAIN UI IMGS /// BACKGROUND -->
+  <div class="loby-img-cont">
+    <img class="background-img" id="background-img" src="" alt="">
+    <div class="room-spray-cont">
+      <img id="spray-img" class="spray-img" src="" alt="">
+    </div>
+
+  </div>
 
 
 
 
+  <div id="scripts-scencials">
+    <script src="../Models/Card.model.js"></script>
+    <script src="../Models/Worker.model.js"></script>
+    <script src="../DB/manifiest.js"></script>
+    <script src="../Config/movers.js"></script>
+    <script src="../Scripts/Modal/basics_modal.js"></script>
+    <script src="../Scripts/Room/get_backgrounds.js"></script>
+    <script src="../Scripts/Modal/change_background_modal.js"></script>
+    <script src="../Scripts/Modal/change_clothes_modal.js"></script>
+
+  </div>
 
 
-<div id="scripts-scencials">
-  <script src="../Models/Card.model.js"></script>
-  <script src="../Models/Worker.model.js"></script>
-  <script src="../DB/manifiest.js"></script>
-  <script src="../Config/movers.js"></script>
-  <script src="../Scripts/Modal/basics_modal.js"></script>
-  <script src="../Scripts/Room/get_backgrounds.js"></script>
-  <script src="../Scripts/Modal/change_background_modal.js"></script>
-  <script src="../Scripts/Modal/change_clothes_modal.js"></script>
+  <div id="scripts-db">
 
-</div>
-
-
-<div id="scripts-db">
-
-</div>
-<div id="scripts-page">
-  <script src="../Scripts/Room/actions.js"></script>
-  <script src="../Scripts/Room/dialog.js"></script>
-  <script src="../Scripts/Room/core.js"></script>
-  <!-- <script src="../Scripts/UI/back.js"></script> -->
-</div>
-</div>
+  </div>
+  <div id="scripts-page">
+    <script src="../Scripts/Room/actions.js"></script>
+    <script src="../Scripts/Room/dialog.js"></script>
+    <script src="../Scripts/Room/minigames/minigame_0.js"></script>
+    <script src="../Scripts/Room/minigames/minigame_1.js"></script>
+    <script src="../Scripts/Room/minigames.js"></script>
+    <script src="../Scripts/Room/sex_params.js"></script>
+    <script src="../Scripts/Room/sex.js"></script>
+    <script src="../Scripts/Room/core.js"></script>
+    <!-- <script src="../Scripts/UI/back.js"></script> -->
+  </div>
+  </div>
 </body>
 
 

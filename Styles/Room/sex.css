@@ -1,0 +1,69 @@
+.sex-spray{
+    width: 600px;
+    height: 700px;
+    position: fixed;
+    bottom: 0px;
+    left: 30%;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin: 0;
+    transition: opacity 1s, background-image .2s;
+    
+}
+
+#stamina-cont{
+opacity: .7;
+}
+.stamina-bar{
+    position: fixed;
+    left: 2%;
+    width: 3%;
+    height:70%;
+    bottom: 1%;
+    background-color: #e4a5e3;    border: 1px solid black;
+}
+
+.stamina-logo{
+    position: fixed;
+    bottom: 70%;
+    height: 10%;
+    width: 5%;
+    background-color: #e4a5e3;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 50%;
+    background-image: url("../../Media/icons/heart.png");
+    background-size: 70% 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 1%;
+
+}
+
+#stamina-progress{
+    height: 0%;
+    background-color: #ea4d4d;
+}
+
+#controls-cont{
+    position: fixed;
+    right: 1%;
+}
+
+.controls-btn{
+    font-family: Font-Description;
+    font-size: 3vh;
+    margin: 10% 0% 0% 0%;
+    background-color: #824e81;
+    border: #000000;
+    transition: background-color .3s;
+    outline: none;
+}
+
+.controls-btn:hover{
+    background-color: #e4a5e3;
+    
+}
+

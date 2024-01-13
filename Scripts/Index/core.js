@@ -2,7 +2,7 @@ const id_page = "index.html";
 
 let user;
 if (IS_DEV) {
-    user = "bona"
+    user = "wendigo"
     ssave("user", user)
     const user_data = sload("user");
 } else {

@@ -82,6 +82,9 @@ const params = {
 }
 
 
+
+
+
 window.addEventListener("keydown", (e) => {
     switch (e.key.toLowerCase()) {
         case "f5": {

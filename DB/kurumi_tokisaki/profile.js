@@ -2,16 +2,20 @@
 aux_creation = JSON.parse(JSON.stringify(profile_base));
 
 
-
+aux_creation.animation_params = {}
 aux_creation.id = auto_increment;
 aux_creation.title = " 💋 💋  KURUMI CAN MAKE YOU HAVE A GOOD TIME  💋 💋 ".toUpperCase();
 aux_creation.pre_desc = `Hi, my name is Tokisaki Kurumi and I can make your most perverted   dreams come true ~`;
 aux_creation.name = `kurumi_tokisaki`;
 aux_creation.selected = 6;
 aux_creation.gallery = 19;
-aux_creation.offerts =["Anal", "Vaginal", "Blowjob", "Handjob", "Facefuck"]
-aux_creation.room_dialogs={
-  default : [
+aux_creation.offerts = [{ name: "Anal", minigame: 1 },
+{ name: "Vaginal", minigame: 1 },
+{ name: "Blowjob", minigame: 0 },
+{ name: "Handjob", minigame: 0 },
+{ name: "Facefuck", minigame: 1 },]
+aux_creation.room_dialogs = {
+  default: [
     "Nice to meet you.\n I hope you enjoy my services...",
     "Nice to meet you.\n Ready for the best night of your life?~",
     "Nice to meet you.\n I hope you came prepared~",

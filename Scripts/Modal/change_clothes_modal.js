@@ -139,12 +139,12 @@ const build_modal_change_clothes = () => {
 }
 
 const show_previews_clothes = (params, preview_arr) => {
-  show_preview_img_clothes(clothes_containers[0], preview_arr[(params.actual * max_per_page_clothes) + 0])
-  show_preview_img_clothes(clothes_containers[1], preview_arr[(params.actual * max_per_page_clothes) + 1])
-  show_preview_img_clothes(clothes_containers[5], preview_arr[(params.actual * max_per_page_clothes) + 5])
-  show_preview_img_clothes(clothes_containers[2], preview_arr[(params.actual * max_per_page_clothes) + 2])
-  show_preview_img_clothes(clothes_containers[3], preview_arr[(params.actual * max_per_page_clothes) + 3])
-  show_preview_img_clothes(clothes_containers[4], preview_arr[(params.actual * max_per_page_clothes) + 4])
+  show_preview_img_clothes(clothes_containers[0], preview_arr[(params.actual * max_per_page_clothes) + 1])
+  show_preview_img_clothes(clothes_containers[1], preview_arr[(params.actual * max_per_page_clothes) + 2])
+  show_preview_img_clothes(clothes_containers[5], preview_arr[(params.actual * max_per_page_clothes) + 6])
+  show_preview_img_clothes(clothes_containers[2], preview_arr[(params.actual * max_per_page_clothes) + 3])
+  show_preview_img_clothes(clothes_containers[3], preview_arr[(params.actual * max_per_page_clothes) + 4])
+  show_preview_img_clothes(clothes_containers[4], preview_arr[(params.actual * max_per_page_clothes) + 5])
 }
 
 const add_paginator_events_clothes = (params, preview_arr) => {

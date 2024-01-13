@@ -14,7 +14,9 @@
     position: fixed;
     bottom: 0;
     left: 35%;
-    z-index: -1;    
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .room-spray-cont{
@@ -29,11 +31,12 @@
     top: 1%;
     border-radius: 1%;
     border: .3vh solid black;
-    background-color: #6b7da0;
+    background-color: #824e81;
     transition:  background-color .2s;
 }
 
-
+/* background-color: #824e81;
+background-color: #e4a5e3; */
 .background-btn{
     background-image: url("../../Media/icons/background\ icon.png");
     left: 5%;
@@ -43,7 +46,7 @@
 
 .top-btn-room:hover{
     
-    background-color: #93b4f6;
+    background-color: #e4a5e3;
 }
 
 #back-btn{
@@ -57,4 +60,29 @@
     background-image: url("../../Media/icons/clothes.png");
     background-size: cover;
     left: 1%;
+}
+
+
+#room-cont{
+    opacity: 0;
+    transition : opacity 1s;
+}
+#room-loby-cont{
+    opacity: 0;
+    transition : opacity 1s;
+}
+
+#user-interactions{
+    opacity: 0;
+    transition : opacity 1s;
+}
+
+#choise-cont{
+    transition : opacity 1s;
+}
+
+
+#minigame-statics{
+    opacity: 1;
+    transition : opacity 1s;
 }
