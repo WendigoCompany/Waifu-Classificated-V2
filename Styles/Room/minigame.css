@@ -18,3 +18,41 @@
     background-position: center;
     transition: background-image .3s;
 }
+
+
+.minigame-1-bar{
+    width: 5vw;
+    position: fixed;
+    height: 90%;
+    top: 1%;
+    right: 4%;
+    border: .3vh solid #000000; 
+}
+
+
+
+.minigame-1-action{
+    position: fixed;
+    width: 4%;
+    height: 8%;
+    background-color: #e4a5e3cf;
+    top: 2%;
+    margin: 0% 0% 0% .4%;
+    border: .3vh solid #000000;
+    border-radius: 50%;
+    transition: top .5s, opacity .2s;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: center;
+}
+
+
+.minigame-1-input{
+    position: fixed;
+    width: 4.8%;
+    height: 10%;
+    bottom: 8.8%;
+    border: .3vh solid #000000;
+    transition: background-color .1s;
+}

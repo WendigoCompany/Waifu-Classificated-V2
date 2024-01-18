@@ -12,7 +12,7 @@ aux_creation.gallery = 19;
 aux_creation.offerts = [{ name: "Anal", minigame: 1 },
 { name: "Vaginal", minigame: 1 },
 { name: "Blowjob", minigame: 0 },
-{ name: "Handjob", minigame: 0 },
+{ name: "Handjob", minigame: 1 },
 { name: "Facefuck", minigame: 1 },]
 aux_creation.room_dialogs = {
   default: [

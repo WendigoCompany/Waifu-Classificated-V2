@@ -76,4 +76,15 @@ const destroy_minigame = () => {
 
 }
 
+
+//CLAUSULA DE VICTORIA
+const update_bar =(points)=>{
+    document.getElementById("stamina-progress").style.height = points + "%";
+}
+
 load_minigame()
+
+
+
+
+

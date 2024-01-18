@@ -20,7 +20,7 @@ const build_minigame_00 = () => {
 
 const auto_add_minigame_00 = () => {
     minigame_00_params.points += .5
-    update_bar()
+    update_bar( minigame_00_params.points)
 }
 
 const load_functionality_minigame_00 = (speed) => {
@@ -42,9 +42,7 @@ const load_functionality_minigame_00 = (speed) => {
     // background-image: url("../../Media/icons/arrow_mini_right.png");
 }
 
-const update_bar =()=>{
-    document.getElementById("stamina-progress").style.height = minigame_00_params.points + "%";
-}
+
 
 const user_input_minigame_00 = (key) => {
     if(key == minigame_00_params.order){
@@ -55,7 +53,7 @@ const user_input_minigame_00 = (key) => {
         minigame_00_params.points += 2
     }
 
-    update_bar()
+    update_bar( minigame_00_params.points)
 }
 
 
